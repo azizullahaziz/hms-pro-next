@@ -46,12 +46,8 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-:root {
+::root {
   --radius: 0.625rem;
-
-  /* Default font (latin locales) */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 
   /* Base */
   --background: oklch(0.99 0 0);
@@ -102,16 +98,9 @@
   --sidebar-ring: #0082d3;
 }
 
-/* RTL locales: switch the sans font to Vazirmatn */
-html[lang="fa"] body,
-html[lang="ps"] body {
-  --font-sans: var(--font-vazir-matn);
-  font-family: var(--font-vazir-matn), var(--font-geist-sans), ui-sans-serif, system-ui;
-}
-
 
 .dark {
-  --background: #0b1a33; /* Dark Blue base */
+    --background: #0b1a33; /* Dark Blue base */
   --foreground: #ffffff;
 
   --card: #11224a;
@@ -153,7 +142,6 @@ html[lang="ps"] body {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: #74ca1a;
 }
-
 
 @layer base {
   * {
